@@ -41,7 +41,7 @@ public class MathGame{
 
         System.out.println("\nGame Start!\n");
 
-        while(player1Lives > 0 || player2Lives > 0){
+        while(player1Lives > 0 && player2Lives > 0){
                         
             if(player1Lives > 0){
                 int ranNum1 = (int)(Math.random()*100);
@@ -70,13 +70,13 @@ public class MathGame{
                 }
                 
             }
+            if(player1Lives == 0){
+                System.out.println("The The lives: player 1: " + player1Lives + " player 2: " + player2Lives + " Player2 Wins!");
+            } else if(player2Lives == 0){
+                System.out.println("The The lives: player 1: " + player1Lives + " player 2: " + player2Lives + " Player1 Wins!");
+           }
             
-            
-        }   if(player1Lives == 0){
-                 System.out.println("The The lives: player 1: " + player1Lives + " player 2: " + player2Lives + " Player2 Wins!");
-             } else if(player2Lives == 0){
-                 System.out.println("The The lives: player 1: " + player1Lives + " player 2: " + player2Lives + " Player1 Wins!");
-            }
+        }   
              
     
     }
